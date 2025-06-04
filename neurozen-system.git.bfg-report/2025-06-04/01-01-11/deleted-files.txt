@@ -1,0 +1,1 @@
+55dac2a5a12d80ab6dd36de650a22a00f510e42a 690 device_config.json
