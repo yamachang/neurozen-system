@@ -20,6 +20,8 @@ data/recorded_data/
 test_participants/
 audio/
 recycle/
+realtime_with_hr/
+debug_data/
 
 # IDE files (common ones your professor might use)
 .vscode/
@@ -39,6 +41,4 @@ Thumbs.db
 *.bak
 
 # Jupyter (if you're using notebooks)
-.ipynb_checkpoints/venv/
-__pycache__/
-*.pyc
+.ipynb_checkpoints/
