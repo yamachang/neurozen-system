@@ -18,7 +18,7 @@ This repository hosts the complete real-time meditation classification system po
 
 ## System Requirements
 
-- **Device**: FRENZ Brainband (e.g., FRENZJ12, FRENZJ41)
+- **Device**: FRENZ Brainband (e.g., FRENZJ12)
 - **OS**: macOS (tested on macOS 12+)
 - **Connectivity**: Bluetooth enabled
 - **Python**: 3.9 recommended
@@ -105,7 +105,7 @@ source venv/bin/activate
 python realtime_stream_web_viz.py
 ```
 
-## 🌐 Visualization Interface
+## Visualization Interface
 
 The HTML dashboard displays:
 - Real-time meditation state and confidence
@@ -113,20 +113,20 @@ The HTML dashboard displays:
 - State transition timeline
 - Device connection and quality indicators
 
-## 📊 Model Details
+## Model Details
 
 - **Model**: LSTM (32 hidden units)
 - **Sequence length**: 1
 - **Classes**: Rest (0), Light (1), Deep (2)
 - **Inference Rate**: Every 2 seconds (4s sliding window, 50% overlap)
 
-## 🧘‍♀️ Study Protocol Support
+## Study Protocol Support
 
 - 6-session design per participant (3 INDUCTION, 3 SHAM)
 - DEID-based participant IDs (e.g., `DEID_P1`)
 - Automatic data organization and session tracking
 
-## 🛠️ Development Notes
+## Development Notes
 
 - Strictly causal preprocessing
 - Real-time feature alignment to training schema
