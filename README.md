@@ -92,7 +92,7 @@ neurozen_system/
 ├── models/                           # Trained model and scaler assets
 ├── data/                             # Input/output and logging directories
     ├── DEID_Participants/
-    ├── processed/
+    └── processed/
 ├── config.yaml, device_config.json   # Configuration files
 ├── tests/, test_participants/        # Unit test and participant files
 └── requirements.txt                  # Python dependencies
@@ -142,6 +142,6 @@ The HTML dashboard displays:
 - Real-time feature alignment to training schema
 - Graceful handling of data quality and session flow
 
-## 📬 Questions?
+## 🧘‍♀️ Questions?
 
 Reach out via [GitHub](https://github.com/yamachang/) if you have trouble using the system or want to contribute.
