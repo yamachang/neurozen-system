@@ -58,7 +58,7 @@ print(scanner.scan())
 
 Copy the Bluetooth device ID (e.g., `FRENZJ12`) for use in real-time scripts.
 
-## File Structure Overview
+## System Structure
 
 ```
 neurozen_system/                   
