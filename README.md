@@ -1,7 +1,7 @@
 # 🧠 NeuroZen: Real-Time EEG Meditation System
 
 <div align="center">
-  <img src="path/to/your/logo.png" alt="NeuroZen Logo" width="200"/>
+  <img src="Logo/Logo1.png" alt="NeuroZen Logo" width="200"/>
 </div>
 
 This repository hosts the complete real-time meditation classification system powered by EEG data from the **FRENZ Brainband**. The system performs real-time biosignal processing, deep learning-based meditation state classification, adaptive audio feedback, and live visualization — designed for both research and immersive meditation experiences.
