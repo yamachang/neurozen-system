@@ -10,7 +10,7 @@ This repository hosts the complete real-time meditation classification system po
 
 - Real-time EEG/IMU/PPG data streaming from FRENZ brainband
 - ML-compatible preprocessing pipeline with causal filters
-- 87-feature vector extraction and alignment
+- 82-feature vector extraction and alignment
 - LSTM-based meditation state classification (Rest, Light, Deep)
 - Adaptive audio feedback with binaural beats
 - Web-based real-time visualization dashboard
@@ -112,6 +112,16 @@ The HTML dashboard displays:
 - Brainwave band power (theta, alpha, etc.)
 - State transition timeline
 - Device connection and quality indicators
+
+<p align="center">
+  <img src="assets/neurozen_interface.png" width="1000"><br>
+  <em>Real-time NeuroZen interface in light mode</em>
+</p>
+
+<p align="center">
+  <img src="assets/neurozen_interface_dark.png" width="1000"><br>
+  <em>Real-time NeuroZen interface in dark mode</em>
+</p>
 
 ## Model Details
 
