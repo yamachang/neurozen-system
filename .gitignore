@@ -39,4 +39,6 @@ Thumbs.db
 *.bak
 
 # Jupyter (if you're using notebooks)
-.ipynb_checkpoints/
+.ipynb_checkpoints/venv/
+__pycache__/
+*.pyc
