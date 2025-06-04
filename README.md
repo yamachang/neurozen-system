@@ -27,7 +27,6 @@ This repository hosts the complete real-time meditation classification system po
 ## Product Key Requirement
 
 A valid **FRENZ product key** is required to connect and stream data.
-
 > Please contact [Earable’s Sales Department](https://earable.ai) to obtain your device-specific product key.
 
 ## Installation & Setup
@@ -62,65 +61,41 @@ Copy the Bluetooth device ID (e.g., `FRENZJ12`) for use in real-time scripts.
 ## 📂 File Structure Overview
 
 ```
-neurozen_v7/
-├── adaptive_audio_system.py         # Real-time audio feedback (binaural + guided)
-├── device_manager.py                # FRENZ device connection and ID setup
-├── feature_alignment_fix.py         # Ensures runtime feature compatibility
-├── frenz_device_debug.py            # Debugging utilities for device data
-├── html_meditation_visualizer.py    # HTML dashboard generator
-├── lstm_inference.py                # Real-time LSTM inference engine
-├── meditation_realtime_data.json    # Sample output data (for reference)
-├── participant_manager.py           # Study protocol manager
-├── polished_neurozen_visualizer.html # Final HTML visualization interface
-├── realtime_processor.py            # Real-time preprocessing and feature pipeline
-├── realtime_stream_web_viz.py       # Main orchestrator script
-├── scanner.py                       # Bluetooth scanner
-├── src/                             # Core signal processing modules
-│   ├── data_processing/             # EEG, PPG, IMU processors
-│   ├── feature_extraction/          # EEG/PPG/IMU feature modules
-│   └── utils/                       # Signal utilities and config manager
-├── models/                          # Trained model and scaler assets
-├── data/, debug_data/, test_results/ # Input/output and logging directories
-├── config.yaml, device_config.json  # Configuration files
-├── tests/, test_participants/       # Unit test and participant files
-└── requirements.txt                 # Python dependencies
-```
-```
 neurozen_system/                   
-├── realtime_stream_web_viz.py     # Main orchestration script
-├── realtime_processor.py          # Real-time processing coordinator
-├── lstm_inference.py              # Model inference engine
-├── feature_alignment_fix.py       # Feature alignment for model compatibility
-├── device_manager.py              # FRENZ device configuration
-├── adaptive_audio_system.py       # Audio feedback system
-├── participant_manager.py         # Study participant tracking
-├── meditation_visualizer.html     # Web-based visualization
+├── realtime_stream_web_viz.py        # Main orchestration script
+├── realtime_processor.py             # Real-time processing coordinator
+├── lstm_inference.py                 # Model inference engine
+├── feature_alignment_fix.py          # Feature alignment for model compatibility
+├── device_manager.py                 # FRENZ device configuration
+├── adaptive_audio_system.py          # Audio feedback system
+├── participant_manager.py            # Study participant tracking
+├── meditation_visualizer.html        # Web-based visualization
 ├── html_meditation_visualizer.py     # Html visualizer
-├── meditation_realtime_data.json      # meta data   
+├── meditation_realtime_data.json     # meta data   
 ├── polished_neurozen_visualizer.html # interface
-├── device_config.json            # Device configuration storage
-└── src/                           # Shared processing modules
+├── device_config.json                # Device configuration storage
+└── src/                              # Shared processing modules
     ├── data_processing/
-    │   ├── eeg_processor.py       # EEG preprocessing (shared with offline)
-    │   ├── ppg_processor.py       # PPG processing (shared with offline)
-    │   ├── imu_processor.py       # IMU processing (shared with offline)
-    │   └── frenz_reader.py        # Hardware interface
+    │   ├── eeg_processor.py          # EEG preprocessing (shared with offline)
+    │   ├── ppg_processor.py          # PPG processing (shared with offline)
+    │   ├── imu_processor.py          # IMU processing (shared with offline)
+    │   └── frenz_reader.py           # Hardware interface
     ├── feature_extraction/
-    │   ├── eeg_features.py        # EEG features (shared with offline)
-    │   ├── ppg_features.py        # PPG features (shared with offline)
-    │   └── imu_features.py        # IMU features (shared with offline)
+    │   ├── eeg_features.py           # EEG features (shared with offline)
+    │   ├── ppg_features.py           # PPG features (shared with offline)
+    │   └── imu_features.py           # IMU features (shared with offline)
     └── utils/
-        ├── config_manager.py      # Configuration management
-        └── signal_utils.py        # Signal processing utilities
-├── frenz_device_debug.py       # FRENZ connection debug
-├── scanner.py                          # FRENZ device scanner 
-├── models/                               # Trained model and scaler assets
-├── data/                                    # Input/output and logging directories
+        ├── config_manager.py         # Configuration management
+        └── signal_utils.py           # Signal processing utilities
+├── frenz_device_debug.py             # FRENZ connection debug
+├── scanner.py                        # FRENZ device scanner 
+├── models/                           # Trained model and scaler assets
+├── data/                             # Input/output and logging directories
     ├── DEID_Participants/
     ├── processed/
-├── config.yaml, device_config.json  # Configuration files
-├── tests/, test_participants/       # Unit test and participant files
-└── requirements.txt                 # Python dependencies
+├── config.yaml, device_config.json   # Configuration files
+├── tests/, test_participants/        # Unit test and participant files
+└── requirements.txt                  # Python dependencies
 ```
 
 ## 🧪 Running the Real-Time System
@@ -159,4 +134,4 @@ The HTML dashboard displays:
 
 ## 📬 Questions?
 
-Reach out via [email or GitHub issues](https://github.com/YOUR_USERNAME/YOUR_REPO/issues) if you have trouble using the system or want to contribute.
+Reach out via [GitHub](https://github.com/yamachang/) if you have trouble using the system or want to contribute.
