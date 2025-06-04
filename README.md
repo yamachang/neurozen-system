@@ -45,7 +45,7 @@ pip install -r requirements.txt
 pip install frenztoolkit
 ```
 
-## 🔗 Device Connection
+## Device Connection
 
 Use the `Scanner` utility to find your device:
 
@@ -58,7 +58,7 @@ print(scanner.scan())
 
 Copy the Bluetooth device ID (e.g., `FRENZJ12`) for use in real-time scripts.
 
-## 📂 File Structure Overview
+## File Structure Overview
 
 ```
 neurozen_system/                   
@@ -98,7 +98,7 @@ neurozen_system/
 └── requirements.txt                  # Python dependencies
 ```
 
-## 🧪 Running the Real-Time System
+## Running the Real-Time System
 
 ```bash
 source venv/bin/activate
