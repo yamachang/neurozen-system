@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroZen - Real-Time Meditation Monitor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lato:wght@300;400;500&family=Satoshi:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Lato', 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #f7f5f3 0%, #e8e4e0 30%, #f0ede8 70%, #f5f2ef 100%);
+            color: #4a3d32;
+            min-height: 100vh;
+            padding: 15px;
+            font-weight: 300;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        body.dark-mode {
+            background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 30%, #1a1a1a 70%, #242424 100%);
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 28px;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 12px 40px rgba(74, 61, 50, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .dark-mode .header {
+            background: rgba(40, 40, 40, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-subtitle {
+            font-style: italic;
+            color: #8a7d72;
+            font-size: 1.1em;
+            margin-top: 4px;
+            font-weight: 300;
+        }
+
+        .dark-mode .header-subtitle {
+            color: #aaa;
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #a8c686;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            font-size: 1.2em;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dark-mode-toggle:hover {
+            box-shadow: 0 0 8px rgba(168, 198, 134, 0.3);
+            transform: scale(1.05);
+        }
+
+        .dark-mode .dark-mode-toggle {
+            background: #7ba05b;
+        }
+
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltip::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+        }
+
+        .logo {
+            height: 95px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 3px 12px rgba(74, 61, 50, 0.15));
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 5px 20px rgba(74, 61, 50, 0.2));
+        }
+
+        .connection-status {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-weight: 400;
+            z-index: 1000;
+            background: linear-gradient(135deg, #a8c686 0%, #94b36b 100%);
+            color: white;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.85rem;
+            box-shadow: 0 4px 15px rgba(168, 198, 134, 0.3);
+        }
+
+        .dark-mode .connection-status {
+            background: linear-gradient(135deg, #7ba05b 0%, #6b8e4f 100%);
+            box-shadow: 0 4px 15px rgba(123, 160, 91, 0.3);
+        }
+
+        .status-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+            margin-bottom: 35px;
+        }
+
+        .status-card {
+            background: rgba(255, 253, 250, 0.6);
+            padding: 28px 22px;
+            border-radius: 22px;
+            text-align: center;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 8px 35px rgba(74, 61, 50, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            transition: all 0.4s ease;
+        }
+
+        .dark-mode .status-card {
+            background: rgba(40, 40, 40, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .status-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 45px rgba(74, 61, 50, 0.12);
+            background: rgba(255, 253, 250, 0.8);
+        }
+
+        .dark-mode .status-card:hover {
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+            background: rgba(45, 45, 45, 0.9);
+        }
+
+        .status-value {
+            font-size: 2.3em;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: #6b5a4d;
+        }
+
+        .dark-mode .status-value {
+            color: #c4a373;
+        }
+
+        .status-label {
+            font-size: 0.9em;
+            color: #8a7d72;
+            font-weight: 300;
+            letter-spacing: 0.8px;
+        }
+
+        .dark-mode .status-label {
+            color: #aaa;
+        }
+
+        .charts-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 35px;
+        }
+
+        .chart-container {
+            background: rgba(255, 253, 250, 0.6);
+            padding: 25px;
+            border-radius: 25px;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 10px 40px rgba(74, 61, 50, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            height: 400px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dark-mode .chart-container {
+            background: rgba(40, 40, 40, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .chart-container:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 50px rgba(74, 61, 50, 0.12);
+        }
+
+        .dark-mode .chart-container:hover {
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .chart-container.meditation-flow {
+            background: linear-gradient(135deg, rgba(168, 198, 134, 0.05) 0%, rgba(255, 253, 250, 0.6) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dark-mode .chart-container.meditation-flow {
+            background: linear-gradient(135deg, rgba(168, 198, 134, 0.1) 0%, rgba(40, 40, 40, 0.8) 100%);
+        }
+
+        /* Gradient background bands for meditation states */
+        .chart-container.meditation-flow::before {
+            content: '';
+            position: absolute;
+            top: 60px; /* Account for title */
+            left: 25px;
+            right: 25px;
+            bottom: 25px;
+            background: linear-gradient(to top, 
+                rgba(196, 163, 115, 0.15) 0%,     /* Rest - Clay */
+                rgba(196, 163, 115, 0.08) 30%,
+                rgba(168, 198, 134, 0.08) 35%,    /* Light - Sage */
+                rgba(168, 198, 134, 0.15) 65%,
+                rgba(123, 160, 91, 0.08) 70%,     /* Deep - Forest */
+                rgba(123, 160, 91, 0.15) 100%
+            );
+            border-radius: 12px;
+            animation: meditationBreathing 6s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Pulsing glow overlay */
+        .chart-container.meditation-flow::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(168, 198, 134, 0.1) 0%, transparent 70%);
+            animation: meditationGlow 5s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        @keyframes meditationBreathing {
+            0%, 100% { 
+                opacity: 0.6; 
+                transform: scale(0.98);
+            }
+            50% { 
+                opacity: 0.9; 
+                transform: scale(1.01);
+            }
+        }
+
+        @keyframes meditationGlow {
+            0%, 100% { 
+                opacity: 0.2; 
+                transform: scale(1) rotate(0deg);
+            }
+            33% { 
+                opacity: 0.4; 
+                transform: scale(1.02) rotate(1deg);
+            }
+            66% { 
+                opacity: 0.6; 
+                transform: scale(1.01) rotate(-1deg);
+            }
+        }
+
+        .chart-title {
+            text-align: center;
+            margin-bottom: 18px;
+            font-weight: 400;
+            font-size: 1.2em;
+            color: #5a4d42;
+            letter-spacing: 0.5px;
+        }
+
+        .dark-mode .chart-title {
+            color: #e0e0e0;
+        }
+
+        .chart-canvas {
+            height: 320px !important;
+        }
+
+        .meditation-display {
+            background: linear-gradient(135deg, rgba(168, 198, 134, 0.08) 0%, rgba(255, 253, 250, 0.6) 100%);
+            padding: 35px 30px;
+            border-radius: 25px;
+            text-align: center;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 12px 45px rgba(74, 61, 50, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dark-mode .meditation-display {
+            background: linear-gradient(135deg, rgba(168, 198, 134, 0.1) 0%, rgba(40, 40, 40, 0.8) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 12px 45px rgba(0, 0, 0, 0.3);
+        }
+
+        .meditation-display::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(168, 198, 134, 0.1) 0%, transparent 70%);
+            animation: breathingGlow 6s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes breathingGlow {
+            0%, 100% { opacity: 0.2; transform: scale(0.95); }
+            50% { opacity: 0.5; transform: scale(1.05); }
+        }
+
+        .meditation-display:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 55px rgba(74, 61, 50, 0.12);
+        }
+
+        .dark-mode .meditation-display:hover {
+            box-shadow: 0 18px 55px rgba(0, 0, 0, 0.4);
+        }
+
+        .meditation-state {
+            font-size: 3.2em;
+            font-weight: 400;
+            margin-bottom: 12px;
+            text-shadow: 0 3px 12px rgba(74, 61, 50, 0.1);
+            transition: all 0.8s ease;
+            letter-spacing: -0.8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .meditation-confidence {
+            font-size: 1.3em;
+            color: #7a6d62;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+        }
+
+        .dark-mode .meditation-confidence {
+            color: #aaa;
+        }
+
+        .participant-info {
+            margin-top: 20px;
+            font-size: 1.05em;
+            color: #8a7d72;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+        }
+
+        .dark-mode .participant-info {
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo {
+                height: 50px;
+            }
+            
+            .status-bar {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .rest-state { color: #c4a373; }
+        .light-meditation { color: #a8c686; }
+        .deep-meditation { color: #7ba05b; }
+
+        /* Enhanced breathing animation */
+        .breathing {
+            animation: breatheEnhanced 5s ease-in-out infinite;
+        }
+
+        @keyframes breatheEnhanced {
+            0%, 100% { 
+                transform: scale(1); 
+                opacity: 0.85;
+                text-shadow: 0 3px 12px rgba(74, 61, 50, 0.1);
+            }
+            50% { 
+                transform: scale(1.04); 
+                opacity: 1;
+                text-shadow: 0 5px 20px rgba(74, 61, 50, 0.15);
+            }
+        }
+
+        /* Smooth fade-in animation */
+        .fade-in {
+            animation: fadeInSmooth 1.2s ease-out;
+        }
+
+        @keyframes fadeInSmooth {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Enhanced pulse glow */
+        .pulse-glow {
+            animation: pulseGlowEnhanced 4s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlowEnhanced {
+            0%, 100% { 
+                box-shadow: 0 8px 35px rgba(74, 61, 50, 0.08); 
+                background: rgba(255, 253, 250, 0.6);
+            }
+            50% { 
+                box-shadow: 0 12px 45px rgba(168, 198, 134, 0.2); 
+                background: rgba(168, 198, 134, 0.1);
+            }
+        }
+
+        .dark-mode .pulse-glow {
+            animation: pulseGlowEnhancedDark 4s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlowEnhancedDark {
+            0%, 100% { 
+                box-shadow: 0 8px 35px rgba(0, 0, 0, 0.3); 
+                background: rgba(40, 40, 40, 0.8);
+            }
+            50% { 
+                box-shadow: 0 12px 45px rgba(168, 198, 134, 0.3); 
+                background: rgba(168, 198, 134, 0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container fade-in">
+        <div class="header">
+            <img src="./Logo/Logo1.png" alt="NeuroZen" class="logo" onerror="this.style.display='none'">
+            <div class="header-subtitle">Where neuroscience meets mindfulness</div>
+        </div>
+
+        <button id="darkModeToggle" class="dark-mode-toggle tooltip" data-tooltip="Toggle light/dark mode">
+            🌙
+        </button>
+
+        <div id="connectionStatus" class="connection-status">
+            <span>●</span> Live Session
+        </div>
+
+        <div class="status-bar">
+            <div class="status-card pulse-glow">
+                <div class="status-value" id="currentState">Rest State</div>
+                <div class="status-label">Current State</div>
+            </div>
+            <div class="status-card">
+                <div class="status-value" id="confidence">0%</div>
+                <div class="status-label">Confidence</div>
+            </div>
+            <div class="status-card">
+                <div class="status-value" id="sessionTime">00:00</div>
+                <div class="status-label">Session Time</div>
+            </div>
+            <div class="status-card">
+                <div class="status-value" id="featureCount">EEG+IMU</div>
+                <div class="status-label">Data Sources</div>
+            </div>
+        </div>
+
+        <div class="charts-container">
+            <div class="chart-container">
+                <div class="chart-title">Brainwave Activity</div>
+                <canvas id="brainwaveChart" class="chart-canvas"></canvas>
+            </div>
+            <div class="chart-container meditation-flow">
+                <div class="chart-title">Meditation Flow Over Time</div>
+                <canvas id="meditationChart" class="chart-canvas"></canvas>
+            </div>
+        </div>
+
+        <div class="meditation-display">
+            <div class="meditation-state breathing" id="mainMeditationState">Rest State</div>
+            <div class="meditation-confidence" id="mainConfidence">Confidence: 0%</div>
+            <div class="participant-info" id="currentParticipant">Preparing session...</div>
+        </div>
+    </div>
+
+    <script>
+        class NeuroZenMeditationMonitor {
+            constructor() {
+                this.dataPath = "meditation_realtime_data.json";
+                this.isConnected = false;
+                this.lastUpdateTime = 0;
+                this.updateInterval = 1000; // 1 second
+                
+                // Enhanced smooth scrolling chart data
+                this.maxDataPoints = 60; // 2 minutes
+                this.brainwaveData = {
+                    timestamps: [],
+                    alpha: [],
+                    theta: [],
+                    delta: [],
+                    beta: [],
+                    gamma: []
+                };
+                
+                this.meditationData = {
+                    timestamps: [],
+                    states: [],
+                    smoothedStates: [],
+                    flowStates: [] // New: Enhanced flowing states
+                };
+                
+                // Priority 1: Enhanced smoothing for flowing meditation visualization
+                this.smoothingWindow = 8;
+                this.stateBuffer = [];
+                this.flowBuffer = [];
+                this.emaBuffer = [];
+                this.emaAlpha = 0.25; // Gentler exponential smoothing
+                this.smoothingAlpha = 0.25;
+                this.flowAlpha = 0.15; // Even gentler for flow effect
+                
+                // Add rolling average for meditation states
+                this.rollingAverageWindow = 5;
+                
+                // Brainwave smoothing buffers
+                this.brainwaveSmoothing = {
+                    alpha: [],
+                    theta: [],
+                    delta: [],
+                    beta: [],
+                    gamma: []
+                };
+                // Adjust this value to control brainwave smoothing:
+                // Higher values (5-7) = more smoothing, lower values (1-3) = more responsive
+                this.brainwaveSmoothingWindow = 3;
+
+                this.initializeCharts();
+                this.startUpdateLoop();
+            }
+
+            // Centered rolling average for smooth meditation state transitions
+            applyCenteredRollingAverage(values, windowSize = 5) {
+                if (values.length < windowSize) return values;
+                
+                const smoothed = [];
+                const halfWindow = Math.floor(windowSize / 2);
+                
+                for (let i = 0; i < values.length; i++) {
+                    const start = Math.max(0, i - halfWindow);
+                    const end = Math.min(values.length - 1, i + halfWindow);
+                    
+                    let sum = 0;
+                    let count = 0;
+                    for (let j = start; j <= end; j++) {
+                        sum += values[j];
+                        count++;
+                    }
+                    
+                    smoothed.push(sum / count);
+                }
+                
+                return smoothed;
+            }
+
+            // Smooth brainwave data using exponential moving average
+            smoothBrainwaveValue(newValue, channel) {
+                if (!this.brainwaveSmoothing[channel]) {
+                    this.brainwaveSmoothing[channel] = [];
+                }
+                
+                const buffer = this.brainwaveSmoothing[channel];
+                buffer.push(newValue);
+                
+                // Keep only recent values for smoothing
+                if (buffer.length > this.brainwaveSmoothingWindow) {
+                    buffer.shift();
+                }
+                
+                // Apply simple moving average
+                const sum = buffer.reduce((acc, val) => acc + val, 0);
+                return sum / buffer.length;
+            }
+
+            async updateData() {
+                try {
+                    const response = await fetch(this.dataPath + '?t=' + Date.now());
+                    
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    this.processNewData(data);
+                    
+                    if (!this.isConnected) {
+                        this.setConnectionStatus(true);
+                    }
+
+                } catch (error) {
+                    if (this.isConnected) {
+                        this.setConnectionStatus(false);
+                    }
+                }
+            }
+
+            processNewData(data) {
+                if (!data || !data.data_points || data.data_points.length === 0) {
+                    return;
+                }
+
+                const dataPoints = data.data_points;
+                
+                // Process each data point for ultra-smooth flowing visualization
+                for (const point of dataPoints) {
+                    this.addBrainwavePoint(point);
+                    this.addEnhancedMeditationFlowPoint(point);
+                }
+                
+                // Update displays with latest data
+                const latestPoint = dataPoints[dataPoints.length - 1];
+                this.updateMeditationDisplay(latestPoint);
+                this.updateSessionInfo(data.session_info || {});
+                this.updateCharts();
+                
+                this.lastUpdateTime = Date.now();
+            }
+
+            addBrainwavePoint(point) {
+                if (!point.brainwaves) return;
+                
+                const timestamp = new Date(point.timestamp * 1000);
+                
+                // Apply smoothing to brainwave data
+                const smoothedAlpha = this.smoothBrainwaveValue(point.brainwaves.alpha || -35, 'alpha');
+                const smoothedTheta = this.smoothBrainwaveValue(point.brainwaves.theta || -40, 'theta');
+                const smoothedDelta = this.smoothBrainwaveValue(point.brainwaves.delta || -45, 'delta');
+                const smoothedBeta = this.smoothBrainwaveValue(point.brainwaves.beta || -30, 'beta');
+                const smoothedGamma = this.smoothBrainwaveValue(point.brainwaves.gamma || -25, 'gamma');
+                
+                // Add to scrolling brainwave data with smoothing
+                this.brainwaveData.timestamps.push(timestamp);
+                this.brainwaveData.alpha.push(smoothedAlpha);
+                this.brainwaveData.theta.push(smoothedTheta);
+                this.brainwaveData.delta.push(smoothedDelta);
+                this.brainwaveData.beta.push(smoothedBeta);
+                this.brainwaveData.gamma.push(smoothedGamma);
+                
+                // Maintain max data points
+                if (this.brainwaveData.timestamps.length > this.maxDataPoints) {
+                    this.brainwaveData.timestamps.shift();
+                    this.brainwaveData.alpha.shift();
+                    this.brainwaveData.theta.shift();
+                    this.brainwaveData.delta.shift();
+                    this.brainwaveData.beta.shift();
+                    this.brainwaveData.gamma.shift();
+                }
+            }
+
+            addEnhancedMeditationFlowPoint(point) {
+                const timestamp = new Date(point.timestamp * 1000);
+                const state = point.meditation_state || 0;
+                const confidence = point.confidence || 0;
+                
+                // Add to scrolling meditation flow data
+                this.meditationData.timestamps.push(timestamp);
+                this.meditationData.states.push(state); // Keep original discrete states
+                
+                // Apply centered rolling average for smooth transitions
+                const smoothedStates = this.applyCenteredRollingAverage(this.meditationData.states, this.rollingAverageWindow);
+                const latestSmoothedState = smoothedStates[smoothedStates.length - 1];
+                
+                // Convert smoothed state to natural flowing percentage
+                const basePercentages = {
+                    0: 30,  // Rest State
+                    1: 50,  // Light Meditation  
+                    2: 70   // Deep Meditation
+                };
+                
+                // Interpolate smoothly between states
+                let flowValue;
+                if (latestSmoothedState <= 0.5) {
+                    const ratio = latestSmoothedState / 0.5;
+                    flowValue = basePercentages[0] + (basePercentages[1] - basePercentages[0]) * ratio;
+                } else if (latestSmoothedState <= 1.5) {
+                    const ratio = (latestSmoothedState - 0.5) / 1.0;
+                    flowValue = basePercentages[1] + (basePercentages[2] - basePercentages[1]) * ratio;
+                } else {
+                    flowValue = basePercentages[2];
+                }
+                
+                // Add natural breathing variation
+                const currentTime = Date.now();
+                const confidenceVariation = (confidence - 0.7) * 6;
+                const primaryBreath = Math.sin(currentTime / 6000) * 2.5; // 6-second breathing
+                const microBreath = Math.sin(currentTime / 2500) * 1; // 2.5-second micro-variation
+                
+                const naturalVariation = confidenceVariation + primaryBreath + microBreath;
+                const finalFlowValue = Math.max(20, Math.min(80, flowValue + naturalVariation));
+                
+                this.meditationData.smoothedStates.push(finalFlowValue);
+                this.meditationData.flowStates.push(finalFlowValue);
+                
+                // Maintain max data points
+                if (this.meditationData.timestamps.length > this.maxDataPoints) {
+                    this.meditationData.timestamps.shift();
+                    this.meditationData.states.shift();
+                    this.meditationData.smoothedStates.shift();
+                    this.meditationData.flowStates.shift();
+                }
+            }
+
+            updateMeditationDisplay(latestPoint) {
+                const stateLabels = {
+                    0: 'Rest State',
+                    1: 'Light Meditation', 
+                    2: 'Deep Meditation'
+                };
+                
+                const stateClasses = {
+                    0: 'rest-state',
+                    1: 'light-meditation',
+                    2: 'deep-meditation'
+                };
+
+                const state = latestPoint.meditation_state || 0;
+                const confidence = latestPoint.confidence || 0;
+                const stateLabel = stateLabels[state] || 'Unknown';
+                
+                // Update main display with enhanced breathing animation
+                const mainStateElement = document.getElementById('mainMeditationState');
+                mainStateElement.textContent = stateLabel;
+                mainStateElement.className = `meditation-state breathing ${stateClasses[state] || ''}`;
+                
+                document.getElementById('mainConfidence').textContent = 
+                    `Confidence: ${Math.round(confidence * 100)}%`;
+                
+                // Update status cards
+                document.getElementById('currentState').textContent = stateLabel;
+                document.getElementById('confidence').textContent = `${Math.round(confidence * 100)}%`;
+            }
+
+            updateSessionInfo(sessionInfo) {
+                const sessionTime = sessionInfo.elapsed_time || 0;
+                const minutes = Math.floor(sessionTime / 60);
+                const seconds = Math.floor(sessionTime % 60);
+                document.getElementById('sessionTime').textContent = 
+                    `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                // Update participant info
+                if (sessionInfo.participant_id) {
+                    const sessionNum = sessionInfo.session_number || '';
+                    document.getElementById('currentParticipant').textContent = 
+                        `${sessionInfo.participant_id}${sessionNum ? ' - Session ' + sessionNum : ''}`;
+                }
+            }
+
+            updateCharts() {
+                // Update brainwave chart with enhanced NeuroZen colors
+                if (this.brainwaveData.timestamps.length > 0) {
+                    const labels = this.brainwaveData.timestamps.map(t => t.toLocaleTimeString());
+                    
+                    this.brainwaveChart.data.labels = labels;
+                    this.brainwaveChart.data.datasets[0].data = this.brainwaveData.alpha;
+                    this.brainwaveChart.data.datasets[1].data = this.brainwaveData.theta;
+                    this.brainwaveChart.data.datasets[2].data = this.brainwaveData.delta;
+                    
+                    this.brainwaveChart.update('none');
+                }
+                
+                // Priority 1: Update meditation flow chart with ultra-smooth flowing line
+                if (this.meditationData.timestamps.length > 0) {
+                    const labels = this.meditationData.timestamps.map(t => t.toLocaleTimeString());
+                    
+                    this.meditationChart.data.labels = labels;
+                    this.meditationChart.data.datasets[0].data = this.meditationData.flowStates;
+                    
+                    this.meditationChart.update('none');
+                }
+            }
+
+            initializeCharts() {
+                const chartOptions = {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: false,
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    },
+                    scales: {
+                        x: {
+                            display: true,
+                            title: {
+                                display: true,
+                                text: 'Time',
+                                color: '#7a6d62',
+                                font: { family: 'Inter', weight: '300' }
+                            },
+                            ticks: { 
+                                color: '#8a7d72',
+                                maxTicksLimit: 8,
+                                font: { family: 'Inter', weight: '300' }
+                            },
+                            grid: { color: 'rgba(122, 109, 98, 0.08)' }
+                        },
+                        y: {
+                            display: true,
+                            ticks: { 
+                                color: '#8a7d72',
+                                font: { family: 'Inter', weight: '300' }
+                            },
+                            grid: { color: 'rgba(122, 109, 98, 0.08)' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { 
+                                color: '#7a6d62',
+                                font: { family: 'Inter', weight: '300' },
+                                usePointStyle: true,
+                                padding: 20
+                            }
+                        }
+                    },
+                    elements: {
+                        line: {
+                            tension: 0.65 // Increased smoothness for brainwave curves
+                        },
+                        point: {
+                            radius: 0 // Clean lines
+                        }
+                    }
+                };
+
+                // Brainwave chart with enhanced NeuroZen earth tone colors
+                this.brainwaveChart = new Chart(document.getElementById('brainwaveChart'), {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [
+                            {
+                                label: 'Alpha',
+                                data: [],
+                                borderColor: '#a8c686',
+                                backgroundColor: 'rgba(168, 198, 134, 0.08)',
+                                fill: false,
+                                borderWidth: 2.5
+                            },
+                            {
+                                label: 'Theta', 
+                                data: [],
+                                borderColor: '#7ba05b',
+                                backgroundColor: 'rgba(123, 160, 91, 0.08)',
+                                fill: false,
+                                borderWidth: 2.5
+                            },
+                            {
+                                label: 'Delta',
+                                data: [],
+                                borderColor: '#c4a373',
+                                backgroundColor: 'rgba(196, 163, 115, 0.08)',
+                                fill: false,
+                                borderWidth: 2.5
+                            }
+                        ]
+                    },
+                    options: {
+                        ...chartOptions,
+                        scales: {
+                            ...chartOptions.scales,
+                            y: {
+                                ...chartOptions.scales.y,
+                                title: {
+                                    display: true,
+                                    text: 'Power (dB)',
+                                    color: '#7a6d62',
+                                    font: { family: 'Inter', weight: '300' }
+                                }
+                            }
+                        }
+                    }
+                });
+
+                // Priority 1: Enhanced meditation flow chart with ultra-smooth flowing visualization
+                this.meditationChart = new Chart(document.getElementById('meditationChart'), {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [{
+                            label: 'Meditation Flow',
+                            data: [],
+                            borderColor: '#a8c686',
+                            backgroundColor: function(context) {
+                                const chart = context.chart;
+                                const {ctx, chartArea} = chart;
+                                if (!chartArea) return null;
+                                
+                                // Create flowing gradient
+                                const gradient = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+                                gradient.addColorStop(0, 'rgba(168, 198, 134, 0.25)');
+                                gradient.addColorStop(0.5, 'rgba(168, 198, 134, 0.15)');
+                                gradient.addColorStop(1, 'rgba(168, 198, 134, 0.05)');
+                                return gradient;
+                            },
+                            fill: true,
+                            borderWidth: 3.5,
+                            tension: 0.85, // Ultra-smooth Bezier curves for organic flow
+                            pointRadius: 0,
+                            pointHoverRadius: 6,
+                            pointHoverBorderWidth: 3,
+                            pointHoverBorderColor: '#a8c686',
+                            pointHoverBackgroundColor: '#ffffff',
+                            shadowColor: 'rgba(168, 198, 134, 0.3)',
+                            shadowBlur: 8,
+                            shadowOffsetX: 0,
+                            shadowOffsetY: 2
+                        }]
+                    },
+                    options: {
+                        ...chartOptions,
+                        scales: {
+                            ...chartOptions.scales,
+                            y: {
+                                ...chartOptions.scales.y,
+                                title: {
+                                    display: true,
+                                    text: 'Meditation Depth',
+                                    color: '#7a6d62',
+                                    font: { family: 'Inter', weight: '300' }
+                                },
+                                min: 20,
+                                max: 80,
+                                ticks: {
+                                    ...chartOptions.scales.y.ticks,
+                                    stepSize: 10,
+                                    callback: function(value) {
+                                        if (value === 30) return 'Rest';
+                                        if (value === 50) return 'Light';
+                                        if (value === 70) return 'Deep';
+                                        return '';
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            ...chartOptions.plugins,
+                            legend: {
+                                display: false // Clean look for meditation flow
+                            }
+                        }
+                    }
+                });
+            }
+
+            setConnectionStatus(connected) {
+                this.isConnected = connected;
+                const statusElement = document.getElementById('connectionStatus');
+                
+                if (connected) {
+                    statusElement.innerHTML = '<span>●</span> Live Session';
+                    statusElement.style.background = 'linear-gradient(135deg, #a8c686 0%, #94b36b 100%)';
+                } else {
+                    statusElement.innerHTML = '<span>●</span> Reconnecting...';
+                    statusElement.style.background = 'linear-gradient(135deg, #c4a373 0%, #b8956a 100%)';
+                }
+            }
+
+            async startUpdateLoop() {
+                const updateData = async () => {
+                    await this.updateData();
+                    setTimeout(updateData, this.updateInterval);
+                };
+                
+                updateData();
+            }
+        }
+
+        // Initialize the NeuroZen monitor when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new NeuroZenMeditationMonitor();
+            
+            // Dark mode toggle functionality
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
+            let isDarkMode = false; // In-memory storage
+            
+            darkModeToggle.addEventListener('click', () => {
+                isDarkMode = !isDarkMode;
+                body.classList.toggle('dark-mode', isDarkMode);
+                
+                darkModeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+                darkModeToggle.setAttribute('data-tooltip', isDarkMode ? 'Switch to light mode' : 'Toggle light/dark mode');
+            });
+        });
+    </script>
+</body>
+</html>

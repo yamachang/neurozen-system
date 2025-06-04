@@ -1,0 +1,308 @@
+{
+  "timestamp": 1748657937.930996,
+  "total_duration_s": 5.735414981842041,
+  "imports_available": true,
+  "summary": {
+    "total_tests": 11,
+    "passed_tests": 11,
+    "failed_tests": 0,
+    "success_rate_percent": 100.0,
+    "real_time_capable": true
+  },
+  "categories": {
+    "unit_tests": {
+      "total": 4,
+      "passed": 4,
+      "results": [
+        {
+          "name": "Unit Test: Feature Alignment",
+          "passed": true,
+          "duration_ms": 0.1701669999998323,
+          "details": {
+            "input_features": 6,
+            "output_features": 87,
+            "target_features": 87,
+            "all_numeric": true
+          },
+          "error": null
+        },
+        {
+          "name": "Unit Test: EEG Processor Init",
+          "passed": true,
+          "duration_ms": 36.58012499999997,
+          "details": {
+            "eeg_processor_available": true,
+            "feature_extractor_available": true,
+            "normalization_loaded": false
+          },
+          "error": null
+        },
+        {
+          "name": "Unit Test: Audio System Mock",
+          "passed": true,
+          "duration_ms": 0.1876250000001356,
+          "details": {
+            "handles_missing_device": true,
+            "parameter_update_successful": true
+          },
+          "error": null
+        },
+        {
+          "name": "Unit Test: Visualization System",
+          "passed": true,
+          "duration_ms": 0.4716249999998645,
+          "details": {
+            "data_file_created": true,
+            "setup_success": true
+          },
+          "error": null
+        }
+      ]
+    },
+    "latency_tests": {
+      "total": 4,
+      "passed": 4,
+      "real_time_capable": true,
+      "results": [
+        {
+          "name": "Latency Test: EEG Processing",
+          "passed": "True",
+          "duration_ms": 96.99424908,
+          "details": {
+            "mean_ms": "97.0",
+            "p95_ms": "105.1",
+            "max_ms": "105.7",
+            "target_ms": 500,
+            "success_rate_percent": "100.0",
+            "samples_tested": 50
+          },
+          "error": null
+        },
+        {
+          "name": "Latency Test: Feature Alignment",
+          "passed": "True",
+          "duration_ms": 0.16818454000001815,
+          "details": {
+            "mean_ms": "0.2",
+            "p95_ms": "0.2",
+            "max_ms": "0.2",
+            "target_ms": 50,
+            "success_rate_percent": "100.0",
+            "samples_tested": 100
+          },
+          "error": null
+        },
+        {
+          "name": "Latency Test: Audio Updates",
+          "passed": "True",
+          "duration_ms": 0.003241680000076741,
+          "details": {
+            "update_mean_ms": "0.00",
+            "update_p95_ms": "0.00",
+            "update_max_ms": "0.01",
+            "buffer_latency_ms": "92.9",
+            "target_ms": 50,
+            "samples_tested": 50
+          },
+          "error": null
+        },
+        {
+          "name": "Latency Test: End-to-End Pipeline",
+          "passed": "True",
+          "duration_ms": 27.335681149999978,
+          "details": {
+            "mean_ms": "27.3",
+            "p95_ms": "29.9",
+            "max_ms": "34.2",
+            "target_ms": 1000,
+            "success_rate_percent": "100.0",
+            "samples_tested": 20
+          },
+          "error": null
+        }
+      ]
+    },
+    "integration_tests": {
+      "total": 3,
+      "passed": 3,
+      "results": [
+        {
+          "name": "Integration Test: Processing Pipeline",
+          "passed": true,
+          "duration_ms": 225.46041599999978,
+          "details": {
+            "features_extracted": 12,
+            "structure_valid": true,
+            "epochs_processed": 5
+          },
+          "error": null
+        },
+        {
+          "name": "Integration Test: Feature to LSTM Pipeline",
+          "passed": true,
+          "duration_ms": 0.2909999999998192,
+          "details": {
+            "input_features": 87,
+            "aligned_features": 87,
+            "target_features": 87
+          },
+          "error": null
+        },
+        {
+          "name": "Integration Test: Complete System",
+          "passed": true,
+          "duration_ms": 27.350041000000047,
+          "details": {
+            "processor": true,
+            "feature_alignment": true,
+            "visualizer": true,
+            "audio_system": true
+          },
+          "error": null
+        }
+      ]
+    }
+  },
+  "performance_targets": {
+    "eeg_processing": 500,
+    "lstm_inference": 100,
+    "feature_alignment": 50,
+    "audio_update": 50,
+    "visualization_update": 100
+  },
+  "all_results": [
+    {
+      "name": "Unit Test: Feature Alignment",
+      "passed": true,
+      "duration_ms": 0.1701669999998323,
+      "details": {
+        "input_features": 6,
+        "output_features": 87,
+        "target_features": 87,
+        "all_numeric": true
+      },
+      "error": null
+    },
+    {
+      "name": "Unit Test: EEG Processor Init",
+      "passed": true,
+      "duration_ms": 36.58012499999997,
+      "details": {
+        "eeg_processor_available": true,
+        "feature_extractor_available": true,
+        "normalization_loaded": false
+      },
+      "error": null
+    },
+    {
+      "name": "Unit Test: Audio System Mock",
+      "passed": true,
+      "duration_ms": 0.1876250000001356,
+      "details": {
+        "handles_missing_device": true,
+        "parameter_update_successful": true
+      },
+      "error": null
+    },
+    {
+      "name": "Unit Test: Visualization System",
+      "passed": true,
+      "duration_ms": 0.4716249999998645,
+      "details": {
+        "data_file_created": true,
+        "setup_success": true
+      },
+      "error": null
+    },
+    {
+      "name": "Latency Test: EEG Processing",
+      "passed": "True",
+      "duration_ms": 96.99424908,
+      "details": {
+        "mean_ms": "97.0",
+        "p95_ms": "105.1",
+        "max_ms": "105.7",
+        "target_ms": 500,
+        "success_rate_percent": "100.0",
+        "samples_tested": 50
+      },
+      "error": null
+    },
+    {
+      "name": "Latency Test: Feature Alignment",
+      "passed": "True",
+      "duration_ms": 0.16818454000001815,
+      "details": {
+        "mean_ms": "0.2",
+        "p95_ms": "0.2",
+        "max_ms": "0.2",
+        "target_ms": 50,
+        "success_rate_percent": "100.0",
+        "samples_tested": 100
+      },
+      "error": null
+    },
+    {
+      "name": "Latency Test: Audio Updates",
+      "passed": "True",
+      "duration_ms": 0.003241680000076741,
+      "details": {
+        "update_mean_ms": "0.00",
+        "update_p95_ms": "0.00",
+        "update_max_ms": "0.01",
+        "buffer_latency_ms": "92.9",
+        "target_ms": 50,
+        "samples_tested": 50
+      },
+      "error": null
+    },
+    {
+      "name": "Latency Test: End-to-End Pipeline",
+      "passed": "True",
+      "duration_ms": 27.335681149999978,
+      "details": {
+        "mean_ms": "27.3",
+        "p95_ms": "29.9",
+        "max_ms": "34.2",
+        "target_ms": 1000,
+        "success_rate_percent": "100.0",
+        "samples_tested": 20
+      },
+      "error": null
+    },
+    {
+      "name": "Integration Test: Processing Pipeline",
+      "passed": true,
+      "duration_ms": 225.46041599999978,
+      "details": {
+        "features_extracted": 12,
+        "structure_valid": true,
+        "epochs_processed": 5
+      },
+      "error": null
+    },
+    {
+      "name": "Integration Test: Feature to LSTM Pipeline",
+      "passed": true,
+      "duration_ms": 0.2909999999998192,
+      "details": {
+        "input_features": 87,
+        "aligned_features": 87,
+        "target_features": 87
+      },
+      "error": null
+    },
+    {
+      "name": "Integration Test: Complete System",
+      "passed": true,
+      "duration_ms": 27.350041000000047,
+      "details": {
+        "processor": true,
+        "feature_alignment": true,
+        "visualizer": true,
+        "audio_system": true
+      },
+      "error": null
+    }
+  ]
+}

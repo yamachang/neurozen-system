@@ -1,0 +1,1945 @@
+{
+  "data_points": [
+    {
+      "timestamp": 1748989377.496258,
+      "meditation_state": 0,
+      "confidence": 0.9516364932060242,
+      "brainwaves": {
+        "delta": -31.999324856536663,
+        "theta": -31.519319928558286,
+        "alpha": -31.984123978091077,
+        "beta": -30.096653017160868,
+        "gamma": -34.50787028087613
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.03272986412048,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989381.591496,
+      "meditation_state": 0,
+      "confidence": 0.9332465529441833,
+      "brainwaves": {
+        "delta": -31.999324856536663,
+        "theta": -31.519319928558286,
+        "alpha": -31.984123978091077,
+        "beta": -30.096653017160868,
+        "gamma": -34.50787028087613
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 33.66493105888367,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989381.591496,
+      "meditation_state": 0,
+      "confidence": 0.9501802325248718,
+      "brainwaves": {
+        "delta": -27.498441985928242,
+        "theta": -29.18061383741925,
+        "alpha": -30.490796486140702,
+        "beta": -31.4925243050861,
+        "gamma": -34.168684872861256
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360465049744,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989385.657921,
+      "meditation_state": 0,
+      "confidence": 0.9732758402824402,
+      "brainwaves": {
+        "delta": -27.498441985928242,
+        "theta": -29.18061383741925,
+        "alpha": -30.490796486140702,
+        "beta": -31.4925243050861,
+        "gamma": -34.168684872861256
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.465516805648804,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989385.657921,
+      "meditation_state": 0,
+      "confidence": 0.9501758217811584,
+      "brainwaves": {
+        "delta": -27.498441985928242,
+        "theta": -29.18061383741925,
+        "alpha": -30.490796486140702,
+        "beta": -31.4925243050861,
+        "gamma": -34.168684872861256
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00351643562317,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989385.657921,
+      "meditation_state": 0,
+      "confidence": 0.9275772571563721,
+      "brainwaves": {
+        "delta": -25.481016571050237,
+        "theta": -27.74144822353103,
+        "alpha": -27.804402946565652,
+        "beta": -25.983018463335895,
+        "gamma": -33.43673770089936
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 33.55154514312744,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989389.819658,
+      "meditation_state": 0,
+      "confidence": 0.9329366087913513,
+      "brainwaves": {
+        "delta": -25.481016571050237,
+        "theta": -27.74144822353103,
+        "alpha": -27.804402946565652,
+        "beta": -25.983018463335895,
+        "gamma": -33.43673770089936
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 33.658732175827026,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989389.819658,
+      "meditation_state": 0,
+      "confidence": 0.9621339440345764,
+      "brainwaves": {
+        "delta": -25.481016571050237,
+        "theta": -27.74144822353103,
+        "alpha": -27.804402946565652,
+        "beta": -25.983018463335895,
+        "gamma": -33.43673770089936
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.24267888069153,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989389.819658,
+      "meditation_state": 0,
+      "confidence": 0.9833558797836304,
+      "brainwaves": {
+        "delta": -30.451996116237797,
+        "theta": -35.644142856196204,
+        "alpha": -35.148715972592655,
+        "beta": -33.80792301397768,
+        "gamma": -37.33492987712853
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.66711759567261,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989393.95541,
+      "meditation_state": 0,
+      "confidence": 0.9501774907112122,
+      "brainwaves": {
+        "delta": -30.451996116237797,
+        "theta": -35.644142856196204,
+        "alpha": -35.148715972592655,
+        "beta": -33.80792301397768,
+        "gamma": -37.33492987712853
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00354981422424,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989393.95541,
+      "meditation_state": 0,
+      "confidence": 0.9833588004112244,
+      "brainwaves": {
+        "delta": -30.451996116237797,
+        "theta": -35.644142856196204,
+        "alpha": -35.148715972592655,
+        "beta": -33.80792301397768,
+        "gamma": -37.33492987712853
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.66717600822449,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989393.95541,
+      "meditation_state": 0,
+      "confidence": 0.9830610156059265,
+      "brainwaves": {
+        "delta": -28.20379944433831,
+        "theta": -28.34571939779871,
+        "alpha": -29.44610596619226,
+        "beta": -28.374172326427278,
+        "gamma": -34.94610298455278
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.66122031211853,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989398.090668,
+      "meditation_state": 0,
+      "confidence": 0.9717036485671997,
+      "brainwaves": {
+        "delta": -28.20379944433831,
+        "theta": -28.34571939779871,
+        "alpha": -29.44610596619226,
+        "beta": -28.374172326427278,
+        "gamma": -34.94610298455278
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.434072971343994,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989398.090668,
+      "meditation_state": 0,
+      "confidence": 0.9861417412757874,
+      "brainwaves": {
+        "delta": -28.20379944433831,
+        "theta": -28.34571939779871,
+        "alpha": -29.44610596619226,
+        "beta": -28.374172326427278,
+        "gamma": -34.94610298455278
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.72283482551575,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989398.090668,
+      "meditation_state": 0,
+      "confidence": 0.9861403703689575,
+      "brainwaves": {
+        "delta": -31.50281949279414,
+        "theta": -31.285056918563658,
+        "alpha": -33.103434457991995,
+        "beta": -33.02900450001234,
+        "gamma": -37.31078064602504
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.72280740737915,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989402.2370749,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -31.50281949279414,
+        "theta": -31.285056918563658,
+        "alpha": -33.103434457991995,
+        "beta": -33.02900450001234,
+        "gamma": -37.31078064602504
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989402.2370749,
+      "meditation_state": 0,
+      "confidence": 0.9822959303855896,
+      "brainwaves": {
+        "delta": -31.50281949279414,
+        "theta": -31.285056918563658,
+        "alpha": -33.103434457991995,
+        "beta": -33.02900450001234,
+        "gamma": -37.31078064602504
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.64591860771179,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989402.2370749,
+      "meditation_state": 0,
+      "confidence": 0.9859223365783691,
+      "brainwaves": {
+        "delta": -26.443227230927796,
+        "theta": -28.751327993680395,
+        "alpha": -29.071772529763592,
+        "beta": -28.76223562165587,
+        "gamma": -33.88659918080328
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.71844673156738,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989406.416866,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -26.443227230927796,
+        "theta": -28.751327993680395,
+        "alpha": -29.071772529763592,
+        "beta": -28.76223562165587,
+        "gamma": -33.88659918080328
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989406.416866,
+      "meditation_state": 0,
+      "confidence": 0.9854459762573242,
+      "brainwaves": {
+        "delta": -26.443227230927796,
+        "theta": -28.751327993680395,
+        "alpha": -29.071772529763592,
+        "beta": -28.76223562165587,
+        "gamma": -33.88659918080328
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.708919525146484,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989406.416866,
+      "meditation_state": 0,
+      "confidence": 0.9852944612503052,
+      "brainwaves": {
+        "delta": -27.277644810781133,
+        "theta": -29.967734251231274,
+        "alpha": -29.61452143862767,
+        "beta": -29.316164303480583,
+        "gamma": -33.71815338227908
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.7058892250061,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989410.5828888,
+      "meditation_state": 0,
+      "confidence": 0.9537515044212341,
+      "brainwaves": {
+        "delta": -27.277644810781133,
+        "theta": -29.967734251231274,
+        "alpha": -29.61452143862767,
+        "beta": -29.316164303480583,
+        "gamma": -33.71815338227908
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.07503008842468,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989410.5828888,
+      "meditation_state": 0,
+      "confidence": 0.9824183583259583,
+      "brainwaves": {
+        "delta": -27.277644810781133,
+        "theta": -29.967734251231274,
+        "alpha": -29.61452143862767,
+        "beta": -29.316164303480583,
+        "gamma": -33.71815338227908
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.648367166519165,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989410.5828888,
+      "meditation_state": 0,
+      "confidence": 0.9830326437950134,
+      "brainwaves": {
+        "delta": -26.58631001564122,
+        "theta": -29.670706413282538,
+        "alpha": -30.410966922770037,
+        "beta": -27.87432930394784,
+        "gamma": -32.95004695815645
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.66065287590027,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989414.773081,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -26.58631001564122,
+        "theta": -29.670706413282538,
+        "alpha": -30.410966922770037,
+        "beta": -27.87432930394784,
+        "gamma": -32.95004695815645
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989414.773081,
+      "meditation_state": 0,
+      "confidence": 0.9840854406356812,
+      "brainwaves": {
+        "delta": -26.58631001564122,
+        "theta": -29.670706413282538,
+        "alpha": -30.410966922770037,
+        "beta": -27.87432930394784,
+        "gamma": -32.95004695815645
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.68170881271362,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989414.773081,
+      "meditation_state": 0,
+      "confidence": 0.9858797192573547,
+      "brainwaves": {
+        "delta": -29.022521280346627,
+        "theta": -32.416825540994246,
+        "alpha": -32.14128760370428,
+        "beta": -32.27345685288364,
+        "gamma": -36.481932214546795
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.717594385147095,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989418.9082549,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -29.022521280346627,
+        "theta": -32.416825540994246,
+        "alpha": -32.14128760370428,
+        "beta": -32.27345685288364,
+        "gamma": -36.481932214546795
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989418.9082549,
+      "meditation_state": 0,
+      "confidence": 0.9855676889419556,
+      "brainwaves": {
+        "delta": -29.022521280346627,
+        "theta": -32.416825540994246,
+        "alpha": -32.14128760370428,
+        "beta": -32.27345685288364,
+        "gamma": -36.481932214546795
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.71135377883911,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989418.9082549,
+      "meditation_state": 0,
+      "confidence": 0.9861361980438232,
+      "brainwaves": {
+        "delta": -24.85276326086893,
+        "theta": -28.291279804656646,
+        "alpha": -31.055743312409895,
+        "beta": -26.47819815722472,
+        "gamma": -29.4361603030421
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.722723960876465,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989423.06671,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -24.85276326086893,
+        "theta": -28.291279804656646,
+        "alpha": -31.055743312409895,
+        "beta": -26.47819815722472,
+        "gamma": -29.4361603030421
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989423.06671,
+      "meditation_state": 0,
+      "confidence": 0.9561111927032471,
+      "brainwaves": {
+        "delta": -24.85276326086893,
+        "theta": -28.291279804656646,
+        "alpha": -31.055743312409895,
+        "beta": -26.47819815722472,
+        "gamma": -29.4361603030421
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.12222385406494,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989423.06671,
+      "meditation_state": 0,
+      "confidence": 0.9779741168022156,
+      "brainwaves": {
+        "delta": -20.807903380171563,
+        "theta": -24.423134303924996,
+        "alpha": -26.34664741915649,
+        "beta": -24.8032838440276,
+        "gamma": -28.574193211205067
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.55948233604431,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989427.222144,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -20.807903380171563,
+        "theta": -24.423134303924996,
+        "alpha": -26.34664741915649,
+        "beta": -24.8032838440276,
+        "gamma": -28.574193211205067
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989427.222144,
+      "meditation_state": 0,
+      "confidence": 0.9779602885246277,
+      "brainwaves": {
+        "delta": -20.807903380171563,
+        "theta": -24.423134303924996,
+        "alpha": -26.34664741915649,
+        "beta": -24.8032838440276,
+        "gamma": -28.574193211205067
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.559205770492554,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989427.222144,
+      "meditation_state": 0,
+      "confidence": 0.9782280921936035,
+      "brainwaves": {
+        "delta": -25.541938255331374,
+        "theta": -31.335538257653717,
+        "alpha": -33.336295100012535,
+        "beta": -29.69297863217446,
+        "gamma": -32.02616305938126
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56456184387207,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989431.3790069,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -25.541938255331374,
+        "theta": -31.335538257653717,
+        "alpha": -33.336295100012535,
+        "beta": -29.69297863217446,
+        "gamma": -32.02616305938126
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989431.3790069,
+      "meditation_state": 0,
+      "confidence": 0.9782072901725769,
+      "brainwaves": {
+        "delta": -25.541938255331374,
+        "theta": -31.335538257653717,
+        "alpha": -33.336295100012535,
+        "beta": -29.69297863217446,
+        "gamma": -32.02616305938126
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56414580345154,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989431.3790069,
+      "meditation_state": 0,
+      "confidence": 0.97734135389328,
+      "brainwaves": {
+        "delta": -24.248762748344486,
+        "theta": -29.62320743762799,
+        "alpha": -30.23552563201228,
+        "beta": -30.02547256148305,
+        "gamma": -34.85665047232501
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.5468270778656,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989435.571629,
+      "meditation_state": 0,
+      "confidence": 0.9508965611457825,
+      "brainwaves": {
+        "delta": -24.248762748344486,
+        "theta": -29.62320743762799,
+        "alpha": -30.23552563201228,
+        "beta": -30.02547256148305,
+        "gamma": -34.85665047232501
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.01793122291565,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989435.571629,
+      "meditation_state": 0,
+      "confidence": 0.9620394706726074,
+      "brainwaves": {
+        "delta": -24.248762748344486,
+        "theta": -29.62320743762799,
+        "alpha": -30.23552563201228,
+        "beta": -30.02547256148305,
+        "gamma": -34.85665047232501
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.24078941345215,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989435.571629,
+      "meditation_state": 0,
+      "confidence": 0.9767240285873413,
+      "brainwaves": {
+        "delta": -26.752257702552214,
+        "theta": -30.205618514513663,
+        "alpha": -31.30935002842249,
+        "beta": -27.17184402572073,
+        "gamma": -28.816545315785486
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.534480571746826,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989439.743764,
+      "meditation_state": 0,
+      "confidence": 0.9502471685409546,
+      "brainwaves": {
+        "delta": -26.752257702552214,
+        "theta": -30.205618514513663,
+        "alpha": -31.30935002842249,
+        "beta": -27.17184402572073,
+        "gamma": -28.816545315785486
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00494337081909,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989439.743764,
+      "meditation_state": 0,
+      "confidence": 0.9621409773826599,
+      "brainwaves": {
+        "delta": -26.752257702552214,
+        "theta": -30.205618514513663,
+        "alpha": -31.30935002842249,
+        "beta": -27.17184402572073,
+        "gamma": -28.816545315785486
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.2428195476532,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989439.743764,
+      "meditation_state": 0,
+      "confidence": 0.978139340877533,
+      "brainwaves": {
+        "delta": -21.435866566174052,
+        "theta": -25.583090630233592,
+        "alpha": -26.76272368064208,
+        "beta": -23.970214092263983,
+        "gamma": -28.927861835451743
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56278681755066,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989443.8792949,
+      "meditation_state": 0,
+      "confidence": 0.9603447914123535,
+      "brainwaves": {
+        "delta": -21.435866566174052,
+        "theta": -25.583090630233592,
+        "alpha": -26.76272368064208,
+        "beta": -23.970214092263983,
+        "gamma": -28.927861835451743
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.20689582824707,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989443.8792949,
+      "meditation_state": 0,
+      "confidence": 0.977038562297821,
+      "brainwaves": {
+        "delta": -21.435866566174052,
+        "theta": -25.583090630233592,
+        "alpha": -26.76272368064208,
+        "beta": -23.970214092263983,
+        "gamma": -28.927861835451743
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.54077124595642,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989443.8792949,
+      "meditation_state": 0,
+      "confidence": 0.9782256484031677,
+      "brainwaves": {
+        "delta": -27.103288282894134,
+        "theta": -32.54756155970948,
+        "alpha": -32.66721820191165,
+        "beta": -28.51517787241274,
+        "gamma": -30.856205523111054
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.564512968063354,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989448.029464,
+      "meditation_state": 0,
+      "confidence": 0.9801550507545471,
+      "brainwaves": {
+        "delta": -27.103288282894134,
+        "theta": -32.54756155970948,
+        "alpha": -32.66721820191165,
+        "beta": -28.51517787241274,
+        "gamma": -30.856205523111054
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.60310101509094,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989448.029464,
+      "meditation_state": 0,
+      "confidence": 0.9772297739982605,
+      "brainwaves": {
+        "delta": -27.103288282894134,
+        "theta": -32.54756155970948,
+        "alpha": -32.66721820191165,
+        "beta": -28.51517787241274,
+        "gamma": -30.856205523111054
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.54459547996521,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989448.029464,
+      "meditation_state": 0,
+      "confidence": 0.9781796932220459,
+      "brainwaves": {
+        "delta": -23.58961083287803,
+        "theta": -26.80602452796179,
+        "alpha": -28.34297550405902,
+        "beta": -26.20258791914018,
+        "gamma": -29.312167159433983
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56359386444092,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989452.1812868,
+      "meditation_state": 0,
+      "confidence": 0.9499492049217224,
+      "brainwaves": {
+        "delta": -23.58961083287803,
+        "theta": -26.80602452796179,
+        "alpha": -28.34297550405902,
+        "beta": -26.20258791914018,
+        "gamma": -29.312167159433983
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 33.99898409843445,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989452.1812868,
+      "meditation_state": 0,
+      "confidence": 0.9757083654403687,
+      "brainwaves": {
+        "delta": -23.58961083287803,
+        "theta": -26.80602452796179,
+        "alpha": -28.34297550405902,
+        "beta": -26.20258791914018,
+        "gamma": -29.312167159433983
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.51416730880737,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989452.1812868,
+      "meditation_state": 0,
+      "confidence": 0.9780820608139038,
+      "brainwaves": {
+        "delta": -26.318580541004934,
+        "theta": -31.639272706564373,
+        "alpha": -32.52807335425473,
+        "beta": -29.456177796635806,
+        "gamma": -34.05504979823545
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.561641216278076,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989456.324437,
+      "meditation_state": 0,
+      "confidence": 0.9799484014511108,
+      "brainwaves": {
+        "delta": -26.318580541004934,
+        "theta": -31.639272706564373,
+        "alpha": -32.52807335425473,
+        "beta": -29.456177796635806,
+        "gamma": -34.05504979823545
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.59896802902222,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989456.324437,
+      "meditation_state": 0,
+      "confidence": 0.9782313704490662,
+      "brainwaves": {
+        "delta": -26.318580541004934,
+        "theta": -31.639272706564373,
+        "alpha": -32.52807335425473,
+        "beta": -29.456177796635806,
+        "gamma": -34.05504979823545
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56462740898132,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989456.324437,
+      "meditation_state": 0,
+      "confidence": 0.9778604507446289,
+      "brainwaves": {
+        "delta": -27.386108616252745,
+        "theta": -32.24850957960723,
+        "alpha": -31.74949740972849,
+        "beta": -28.927240250555947,
+        "gamma": -30.930453767962614
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.55720901489258,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989460.492364,
+      "meditation_state": 0,
+      "confidence": 0.9501806497573853,
+      "brainwaves": {
+        "delta": -27.386108616252745,
+        "theta": -32.24850957960723,
+        "alpha": -31.74949740972849,
+        "beta": -28.927240250555947,
+        "gamma": -30.930453767962614
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.003612995147705,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989460.492364,
+      "meditation_state": 0,
+      "confidence": 0.9778344631195068,
+      "brainwaves": {
+        "delta": -27.386108616252745,
+        "theta": -32.24850957960723,
+        "alpha": -31.74949740972849,
+        "beta": -28.927240250555947,
+        "gamma": -30.930453767962614
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.55668926239014,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989460.492364,
+      "meditation_state": 0,
+      "confidence": 0.9772356152534485,
+      "brainwaves": {
+        "delta": -29.0054140464756,
+        "theta": -30.711307386979605,
+        "alpha": -32.05519694875809,
+        "beta": -29.515034448953127,
+        "gamma": -31.773339190224277
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.54471230506897,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989464.663129,
+      "meditation_state": 0,
+      "confidence": 0.9575334787368774,
+      "brainwaves": {
+        "delta": -29.0054140464756,
+        "theta": -30.711307386979605,
+        "alpha": -32.05519694875809,
+        "beta": -29.515034448953127,
+        "gamma": -31.773339190224277
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.15066957473755,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989464.663129,
+      "meditation_state": 0,
+      "confidence": 0.9755668044090271,
+      "brainwaves": {
+        "delta": -29.0054140464756,
+        "theta": -30.711307386979605,
+        "alpha": -32.05519694875809,
+        "beta": -29.515034448953127,
+        "gamma": -31.773339190224277
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.51133608818054,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989464.663129,
+      "meditation_state": 0,
+      "confidence": 0.978201150894165,
+      "brainwaves": {
+        "delta": -19.234008360915695,
+        "theta": -21.8504539906038,
+        "alpha": -24.104856190843535,
+        "beta": -21.345852385179857,
+        "gamma": -24.418503426887995
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.5640230178833,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989468.901134,
+      "meditation_state": 0,
+      "confidence": 0.9684677124023438,
+      "brainwaves": {
+        "delta": -19.234008360915695,
+        "theta": -21.8504539906038,
+        "alpha": -24.104856190843535,
+        "beta": -21.345852385179857,
+        "gamma": -24.418503426887995
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.369354248046875,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989468.901134,
+      "meditation_state": 0,
+      "confidence": 0.9779604077339172,
+      "brainwaves": {
+        "delta": -19.234008360915695,
+        "theta": -21.8504539906038,
+        "alpha": -24.104856190843535,
+        "beta": -21.345852385179857,
+        "gamma": -24.418503426887995
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.559208154678345,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989468.901134,
+      "meditation_state": 0,
+      "confidence": 0.9785307049751282,
+      "brainwaves": {
+        "delta": -22.046368230802294,
+        "theta": -26.320269984643563,
+        "alpha": -30.00802261275611,
+        "beta": -26.47061095593647,
+        "gamma": -28.87314676524486
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.57061409950256,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989473.051747,
+      "meditation_state": 0,
+      "confidence": 0.9684122800827026,
+      "brainwaves": {
+        "delta": -22.046368230802294,
+        "theta": -26.320269984643563,
+        "alpha": -30.00802261275611,
+        "beta": -26.47061095593647,
+        "gamma": -28.87314676524486
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.36824560165405,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989473.051747,
+      "meditation_state": 0,
+      "confidence": 0.9618579149246216,
+      "brainwaves": {
+        "delta": -22.046368230802294,
+        "theta": -26.320269984643563,
+        "alpha": -30.00802261275611,
+        "beta": -26.47061095593647,
+        "gamma": -28.87314676524486
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.23715829849243,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989473.051747,
+      "meditation_state": 0,
+      "confidence": 0.978228747844696,
+      "brainwaves": {
+        "delta": -27.49777415062112,
+        "theta": -34.57361329401497,
+        "alpha": -33.87093157735429,
+        "beta": -31.323912438080878,
+        "gamma": -33.906503022770124
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56457495689392,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989477.222176,
+      "meditation_state": 0,
+      "confidence": 0.9801116585731506,
+      "brainwaves": {
+        "delta": -27.49777415062112,
+        "theta": -34.57361329401497,
+        "alpha": -33.87093157735429,
+        "beta": -31.323912438080878,
+        "gamma": -33.906503022770124
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.60223317146301,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989477.222176,
+      "meditation_state": 0,
+      "confidence": 0.9741265773773193,
+      "brainwaves": {
+        "delta": -27.49777415062112,
+        "theta": -34.57361329401497,
+        "alpha": -33.87093157735429,
+        "beta": -31.323912438080878,
+        "gamma": -33.906503022770124
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.48253154754639,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989477.222176,
+      "meditation_state": 0,
+      "confidence": 0.9781648516654968,
+      "brainwaves": {
+        "delta": -23.473060046298247,
+        "theta": -27.680121854342183,
+        "alpha": -28.389034874454477,
+        "beta": -26.70215986470558,
+        "gamma": -31.57027619014668
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56329703330994,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989481.396582,
+      "meditation_state": 0,
+      "confidence": 0.9684622883796692,
+      "brainwaves": {
+        "delta": -23.473060046298247,
+        "theta": -27.680121854342183,
+        "alpha": -28.389034874454477,
+        "beta": -26.70215986470558,
+        "gamma": -31.57027619014668
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.369245767593384,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989481.396582,
+      "meditation_state": 0,
+      "confidence": 0.978224515914917,
+      "brainwaves": {
+        "delta": -23.473060046298247,
+        "theta": -27.680121854342183,
+        "alpha": -28.389034874454477,
+        "beta": -26.70215986470558,
+        "gamma": -31.57027619014668
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56449031829834,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989481.396582,
+      "meditation_state": 0,
+      "confidence": 0.9782224893569946,
+      "brainwaves": {
+        "delta": -29.140748519645996,
+        "theta": -33.74269147524669,
+        "alpha": -33.08704451982967,
+        "beta": -31.173812777307422,
+        "gamma": -34.32829565013885
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56444978713989,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989485.567349,
+      "meditation_state": 0,
+      "confidence": 0.9504309296607971,
+      "brainwaves": {
+        "delta": -29.140748519645996,
+        "theta": -33.74269147524669,
+        "alpha": -33.08704451982967,
+        "beta": -31.173812777307422,
+        "gamma": -34.32829565013885
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00861859321594,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989485.567349,
+      "meditation_state": 0,
+      "confidence": 0.9775269031524658,
+      "brainwaves": {
+        "delta": -29.140748519645996,
+        "theta": -33.74269147524669,
+        "alpha": -33.08704451982967,
+        "beta": -31.173812777307422,
+        "gamma": -34.32829565013885
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.550538063049316,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989485.567349,
+      "meditation_state": 0,
+      "confidence": 0.9782314896583557,
+      "brainwaves": {
+        "delta": -23.212361837943238,
+        "theta": -27.27755959719999,
+        "alpha": -29.88291358236496,
+        "beta": -26.87025860857698,
+        "gamma": -30.415531911186047
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.564629793167114,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989489.7134871,
+      "meditation_state": 0,
+      "confidence": 0.9732701778411865,
+      "brainwaves": {
+        "delta": -23.212361837943238,
+        "theta": -27.27755959719999,
+        "alpha": -29.88291358236496,
+        "beta": -26.87025860857698,
+        "gamma": -30.415531911186047
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.46540355682373,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989489.7134871,
+      "meditation_state": 0,
+      "confidence": 0.9622140526771545,
+      "brainwaves": {
+        "delta": -23.212361837943238,
+        "theta": -27.27755959719999,
+        "alpha": -29.88291358236496,
+        "beta": -26.87025860857698,
+        "gamma": -30.415531911186047
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.24428105354309,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989489.7134871,
+      "meditation_state": 0,
+      "confidence": 0.9649441838264465,
+      "brainwaves": {
+        "delta": -21.650618282329297,
+        "theta": -24.73775936126294,
+        "alpha": -27.80739466829768,
+        "beta": -26.410617920260925,
+        "gamma": -32.356419448979736
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.29888367652893,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989493.856933,
+      "meditation_state": 0,
+      "confidence": 0.9501808285713196,
+      "brainwaves": {
+        "delta": -21.650618282329297,
+        "theta": -24.73775936126294,
+        "alpha": -27.80739466829768,
+        "beta": -26.410617920260925,
+        "gamma": -32.356419448979736
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00361657142639,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989493.856933,
+      "meditation_state": 0,
+      "confidence": 0.9752601981163025,
+      "brainwaves": {
+        "delta": -21.650618282329297,
+        "theta": -24.73775936126294,
+        "alpha": -27.80739466829768,
+        "beta": -26.410617920260925,
+        "gamma": -32.356419448979736
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.50520396232605,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989493.856933,
+      "meditation_state": 0,
+      "confidence": 0.977330207824707,
+      "brainwaves": {
+        "delta": -29.8676625452568,
+        "theta": -33.64121913549538,
+        "alpha": -33.513507505540346,
+        "beta": -31.69483690482688,
+        "gamma": -35.05611157705809
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.54660415649414,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989498.012932,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -29.8676625452568,
+        "theta": -33.64121913549538,
+        "alpha": -33.513507505540346,
+        "beta": -31.69483690482688,
+        "gamma": -35.05611157705809
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989498.012932,
+      "meditation_state": 0,
+      "confidence": 0.9710755348205566,
+      "brainwaves": {
+        "delta": -29.8676625452568,
+        "theta": -33.64121913549538,
+        "alpha": -33.513507505540346,
+        "beta": -31.69483690482688,
+        "gamma": -35.05611157705809
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.42151069641113,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989498.012932,
+      "meditation_state": 0,
+      "confidence": 0.9779602885246277,
+      "brainwaves": {
+        "delta": -32.70154579301259,
+        "theta": -35.09947956217874,
+        "alpha": -35.34671014824315,
+        "beta": -33.02492349080157,
+        "gamma": -34.40882399544098
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.559205770492554,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989502.150301,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -32.70154579301259,
+        "theta": -35.09947956217874,
+        "alpha": -35.34671014824315,
+        "beta": -33.02492349080157,
+        "gamma": -34.40882399544098
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989502.150301,
+      "meditation_state": 0,
+      "confidence": 0.9782301187515259,
+      "brainwaves": {
+        "delta": -32.70154579301259,
+        "theta": -35.09947956217874,
+        "alpha": -35.34671014824315,
+        "beta": -33.02492349080157,
+        "gamma": -34.40882399544098
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56460237503052,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989502.150301,
+      "meditation_state": 0,
+      "confidence": 0.9782204031944275,
+      "brainwaves": {
+        "delta": -32.324968176267426,
+        "theta": -35.15078426171836,
+        "alpha": -35.66900841347044,
+        "beta": -33.38993086929282,
+        "gamma": -36.87547998921542
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56440806388855,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989506.301297,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -32.324968176267426,
+        "theta": -35.15078426171836,
+        "alpha": -35.66900841347044,
+        "beta": -33.38993086929282,
+        "gamma": -36.87547998921542
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989506.301297,
+      "meditation_state": 0,
+      "confidence": 0.96185702085495,
+      "brainwaves": {
+        "delta": -32.324968176267426,
+        "theta": -35.15078426171836,
+        "alpha": -35.66900841347044,
+        "beta": -33.38993086929282,
+        "gamma": -36.87547998921542
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.237140417099,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989506.301297,
+      "meditation_state": 0,
+      "confidence": 0.9779291749000549,
+      "brainwaves": {
+        "delta": -28.506979282504638,
+        "theta": -32.47039562028068,
+        "alpha": -32.32627478452602,
+        "beta": -31.202954398535148,
+        "gamma": -34.55819932198361
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.5585834980011,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989510.490619,
+      "meditation_state": 0,
+      "confidence": 0.9351582527160645,
+      "brainwaves": {
+        "delta": -28.506979282504638,
+        "theta": -32.47039562028068,
+        "alpha": -32.32627478452602,
+        "beta": -31.202954398535148,
+        "gamma": -34.55819932198361
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 33.70316505432129,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989510.490619,
+      "meditation_state": 0,
+      "confidence": 0.96185702085495,
+      "brainwaves": {
+        "delta": -28.506979282504638,
+        "theta": -32.47039562028068,
+        "alpha": -32.32627478452602,
+        "beta": -31.202954398535148,
+        "gamma": -34.55819932198361
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.237140417099,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989510.490619,
+      "meditation_state": 0,
+      "confidence": 0.9619462490081787,
+      "brainwaves": {
+        "delta": -25.8210903356565,
+        "theta": -30.276880685676804,
+        "alpha": -31.651504667599816,
+        "beta": -28.411552290697625,
+        "gamma": -31.385516605753605
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.238924980163574,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989514.692621,
+      "meditation_state": 0,
+      "confidence": 0.9724559187889099,
+      "brainwaves": {
+        "delta": -25.8210903356565,
+        "theta": -30.276880685676804,
+        "alpha": -31.651504667599816,
+        "beta": -28.411552290697625,
+        "gamma": -31.385516605753605
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.4491183757782,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989514.692621,
+      "meditation_state": 0,
+      "confidence": 0.9782312512397766,
+      "brainwaves": {
+        "delta": -32.44174174452593,
+        "theta": -32.52176302734165,
+        "alpha": -32.70596943793382,
+        "beta": -29.26414591253341,
+        "gamma": -32.078311868745665
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.56462502479553,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989518.8367,
+      "meditation_state": 0,
+      "confidence": 0.9625380039215088,
+      "brainwaves": {
+        "delta": -32.44174174452593,
+        "theta": -32.52176302734165,
+        "alpha": -32.70596943793382,
+        "beta": -29.26414591253341,
+        "gamma": -32.078311868745665
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.250760078430176,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989518.8367,
+      "meditation_state": 0,
+      "confidence": 0.956075131893158,
+      "brainwaves": {
+        "delta": -29.994406768449732,
+        "theta": -33.024578920702645,
+        "alpha": -34.342159276351566,
+        "beta": -30.507607358793898,
+        "gamma": -34.397986397022905
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.12150263786316,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989522.991744,
+      "meditation_state": 0,
+      "confidence": 0.9572528600692749,
+      "brainwaves": {
+        "delta": -29.994406768449732,
+        "theta": -33.024578920702645,
+        "alpha": -34.342159276351566,
+        "beta": -30.507607358793898,
+        "gamma": -34.397986397022905
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.1450572013855,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989522.991744,
+      "meditation_state": 0,
+      "confidence": 0.9572337865829468,
+      "brainwaves": {
+        "delta": -26.729810644870533,
+        "theta": -29.11910030631652,
+        "alpha": -30.058405530649885,
+        "beta": -29.44039435216813,
+        "gamma": -33.061636220200214
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.144675731658936,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989527.133603,
+      "meditation_state": 0,
+      "confidence": 0.969103991985321,
+      "brainwaves": {
+        "delta": -26.729810644870533,
+        "theta": -29.11910030631652,
+        "alpha": -30.058405530649885,
+        "beta": -29.44039435216813,
+        "gamma": -33.061636220200214
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.38207983970642,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989527.133603,
+      "meditation_state": 0,
+      "confidence": 0.9779585599899292,
+      "brainwaves": {
+        "delta": -29.295745178157073,
+        "theta": -32.717860614258356,
+        "alpha": -33.73787989986148,
+        "beta": -31.079336875750705,
+        "gamma": -35.65275982577681
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.559171199798584,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989531.279236,
+      "meditation_state": 0,
+      "confidence": 0.9777416586875916,
+      "brainwaves": {
+        "delta": -29.295745178157073,
+        "theta": -32.717860614258356,
+        "alpha": -33.73787989986148,
+        "beta": -31.079336875750705,
+        "gamma": -35.65275982577681
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.55483317375183,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989531.279236,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -31.44000641174366,
+        "theta": -32.42206783921866,
+        "alpha": -32.77046801976975,
+        "beta": -30.684964214281983,
+        "gamma": -34.2983845141883
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989539.913127,
+      "meditation_state": 0,
+      "confidence": 0.9732758402824402,
+      "brainwaves": {
+        "delta": -31.44000641174366,
+        "theta": -32.42206783921866,
+        "alpha": -32.77046801976975,
+        "beta": -30.684964214281983,
+        "gamma": -34.2983845141883
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.465516805648804,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989539.913127,
+      "meditation_state": 0,
+      "confidence": 0.9235202670097351,
+      "brainwaves": {
+        "delta": -28.572049935956038,
+        "theta": -30.21057332447166,
+        "alpha": -30.726241812486286,
+        "beta": -27.93597431456491,
+        "gamma": -31.77888130866956
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 33.4704053401947,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989544.04566,
+      "meditation_state": 0,
+      "confidence": 0.9501811861991882,
+      "brainwaves": {
+        "delta": -28.572049935956038,
+        "theta": -30.21057332447166,
+        "alpha": -30.726241812486286,
+        "beta": -27.93597431456491,
+        "gamma": -31.77888130866956
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.003623723983765,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989544.04566,
+      "meditation_state": 0,
+      "confidence": 0.8784282803535461,
+      "brainwaves": {
+        "delta": -26.077245898696095,
+        "theta": -27.96588649808691,
+        "alpha": -29.25205582386682,
+        "beta": -27.768481848488307,
+        "gamma": -30.87294777841126
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 32.56856560707092,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989548.171941,
+      "meditation_state": 0,
+      "confidence": 0.9281638264656067,
+      "brainwaves": {
+        "delta": -26.077245898696095,
+        "theta": -27.96588649808691,
+        "alpha": -29.25205582386682,
+        "beta": -27.768481848488307,
+        "gamma": -30.87294777841126
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 33.563276529312134,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989548.171941,
+      "meditation_state": 0,
+      "confidence": 0.959934651851654,
+      "brainwaves": {
+        "delta": -26.523957963804513,
+        "theta": -30.2426613301384,
+        "alpha": -30.15138900019078,
+        "beta": -27.030781958009253,
+        "gamma": -31.0137897638891
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.19869303703308,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989552.3062441,
+      "meditation_state": 0,
+      "confidence": 0.8256466388702393,
+      "brainwaves": {
+        "delta": -26.523957963804513,
+        "theta": -30.2426613301384,
+        "alpha": -30.15138900019078,
+        "beta": -27.030781958009253,
+        "gamma": -31.0137897638891
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 31.512932777404785,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989552.3062441,
+      "meditation_state": 0,
+      "confidence": 0.9215002059936523,
+      "brainwaves": {
+        "delta": -28.91291431242946,
+        "theta": -31.708245240801027,
+        "alpha": -33.13778250921599,
+        "beta": -30.579748946819556,
+        "gamma": -34.15862501464209
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 33.43000411987305,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989556.4298072,
+      "meditation_state": 0,
+      "confidence": 0.9742947816848755,
+      "brainwaves": {
+        "delta": -28.91291431242946,
+        "theta": -31.708245240801027,
+        "alpha": -33.13778250921599,
+        "beta": -30.579748946819556,
+        "gamma": -34.15862501464209
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.48589563369751,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989556.4298072,
+      "meditation_state": 0,
+      "confidence": 0.9743030667304993,
+      "brainwaves": {
+        "delta": -27.04322491711789,
+        "theta": -29.483634744631303,
+        "alpha": -31.48135879177077,
+        "beta": -27.287896409469813,
+        "gamma": -30.804733086344147
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.486061334609985,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989560.6416252,
+      "meditation_state": 0,
+      "confidence": 0.921719491481781,
+      "brainwaves": {
+        "delta": -27.04322491711789,
+        "theta": -29.483634744631303,
+        "alpha": -31.48135879177077,
+        "beta": -27.287896409469813,
+        "gamma": -30.804733086344147
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 33.43438982963562,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989560.6416252,
+      "meditation_state": 0,
+      "confidence": 0.9795776009559631,
+      "brainwaves": {
+        "delta": -27.246351910884194,
+        "theta": -30.510223321453303,
+        "alpha": -30.96868579182796,
+        "beta": -26.921046210441954,
+        "gamma": -30.100382985353484
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.59155201911926,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989564.819207,
+      "meditation_state": 0,
+      "confidence": 0.9501804113388062,
+      "brainwaves": {
+        "delta": -27.246351910884194,
+        "theta": -30.510223321453303,
+        "alpha": -30.96868579182796,
+        "beta": -26.921046210441954,
+        "gamma": -30.100382985353484
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.00360822677612,
+      "label": "Rest State"
+    },
+    {
+      "timestamp": 1748989564.819207,
+      "meditation_state": 0,
+      "confidence": 0.9501813054084778,
+      "brainwaves": {
+        "delta": -14.40928120634778,
+        "theta": -14.553787387327876,
+        "alpha": -14.03128965928326,
+        "beta": -10.948394175827067,
+        "gamma": -16.094010770635556
+      },
+      "feature_count": "82 (EEG+IMU)",
+      "smoothed_class": 0,
+      "score": 34.003626108169556,
+      "label": "Rest State"
+    }
+  ],
+  "session_info": {
+    "elapsed_time": 373.9297122955322,
+    "participant_id": "DEID_P1",
+    "session_number": 1
+  },
+  "last_update": 1748989578.4105742,
+  "participant_id": "DEID_P1",
+  "session_number": 1,
+  "current_state": {
+    "meditation_score": 34.003626108169556,
+    "meditation_state": 0,
+    "meditation_label": "Rest State",
+    "meditation_confidence": 0.9501813054084778,
+    "brainwaves": {
+      "delta": -14.40928120634778,
+      "theta": -14.553787387327876,
+      "alpha": -14.03128965928326,
+      "beta": -10.948394175827067,
+      "gamma": -16.094010770635556
+    }
+  }
+}

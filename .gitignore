@@ -1,0 +1,42 @@
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+build/
+dist/
+
+# Project specific
+data/raw/
+data/recorded_data/
+test_participants/
+audio/
+recycle/
+
+# IDE files (common ones your professor might use)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Other common ignores
+*.log
+.pytest_cache/
+.coverage
+*.tmp
+*.bak
+
+# Jupyter (if you're using notebooks)
+.ipynb_checkpoints/

@@ -1,0 +1,353 @@
+{
+  "last_update": 1748921095.340606,
+  "participant_info": null,
+  "session_info": {
+    "elapsed_time": 44.407673835754395,
+    "total_points": 22,
+    "feature_type": "eeg_imu_only",
+    "feature_count": 82,
+    "max_points": 60,
+    "smoothing_enabled": true
+  },
+  "current_state": {
+    "meditation_score": 35.16755556252506,
+    "meditation_state": 0,
+    "meditation_confidence": 0.9782024025917053,
+    "meditation_label": "Rest State",
+    "feature_count": 82
+  },
+  "brainwaves": {
+    "alpha": -32.18257542105512,
+    "theta": -30.95413896332295,
+    "delta": -26.684775431030836,
+    "beta": -27.077896632431056,
+    "gamma": -29.719538156965505
+  },
+  "data_points": [
+    {
+      "timestamp": 1748921055.538581,
+      "meditation_state": 0,
+      "confidence": 0.9782292246818542,
+      "percentage": 34.17569375374302,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.038443995102995,
+        "theta": -34.525504449538246,
+        "delta": -31.229852846857995,
+        "beta": -27.117638266810946,
+        "gamma": -29.899174714691576
+      }
+    },
+    {
+      "timestamp": 1748921055.538581,
+      "meditation_state": 0,
+      "confidence": 0.9782312512397766,
+      "percentage": 34.265260808683436,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.038443995102995,
+        "theta": -34.525504449538246,
+        "delta": -31.229852846857995,
+        "beta": -27.117638266810946,
+        "gamma": -29.899174714691576
+      }
+    },
+    {
+      "timestamp": 1748921055.538581,
+      "meditation_state": 0,
+      "confidence": 0.9782308340072632,
+      "percentage": 34.27077478821311,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.038443995102995,
+        "theta": -34.525504449538246,
+        "delta": -31.229852846857995,
+        "beta": -27.117638266810946,
+        "gamma": -29.899174714691576
+      }
+    },
+    {
+      "timestamp": 1748921059.993472,
+      "meditation_state": 0,
+      "confidence": 0.9782280921936035,
+      "percentage": 34.24295828588751,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.59710564109825,
+        "theta": -33.80296320672369,
+        "delta": -31.01377472906939,
+        "beta": -26.434834133499304,
+        "gamma": -29.502840741121126
+      }
+    },
+    {
+      "timestamp": 1748921059.993472,
+      "meditation_state": 0,
+      "confidence": 0.9782312512397766,
+      "percentage": 34.211945922399366,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.59710564109825,
+        "theta": -33.80296320672369,
+        "delta": -31.01377472906939,
+        "beta": -26.434834133499304,
+        "gamma": -29.502840741121126
+      }
+    },
+    {
+      "timestamp": 1748921059.993472,
+      "meditation_state": 0,
+      "confidence": 0.9782311320304871,
+      "percentage": 34.09139829900168,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.59710564109825,
+        "theta": -33.80296320672369,
+        "delta": -31.01377472906939,
+        "beta": -26.434834133499304,
+        "gamma": -29.502840741121126
+      }
+    },
+    {
+      "timestamp": 1748921064.3682141,
+      "meditation_state": 0,
+      "confidence": 0.9684136509895325,
+      "percentage": 34.19493715381857,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -34.42951745151164,
+        "theta": -34.502904861581285,
+        "delta": -31.99429162688962,
+        "beta": -26.551173381286144,
+        "gamma": -29.171601806227066
+      }
+    },
+    {
+      "timestamp": 1748921064.3682141,
+      "meditation_state": 0,
+      "confidence": 0.9769721031188965,
+      "percentage": 34.552567095069385,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -34.42951745151164,
+        "theta": -34.502904861581285,
+        "delta": -31.99429162688962,
+        "beta": -26.551173381286144,
+        "gamma": -29.171601806227066
+      }
+    },
+    {
+      "timestamp": 1748921068.822262,
+      "meditation_state": 0,
+      "confidence": 0.9689892530441284,
+      "percentage": 34.95848680427652,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -32.09456884917582,
+        "theta": -32.82260532512168,
+        "delta": -30.82948443520594,
+        "beta": -25.833982901000375,
+        "gamma": -28.301527246729115
+      }
+    },
+    {
+      "timestamp": 1748921068.822262,
+      "meditation_state": 0,
+      "confidence": 0.9778719544410706,
+      "percentage": 34.591486348044484,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -32.09456884917582,
+        "theta": -32.82260532512168,
+        "delta": -30.82948443520594,
+        "beta": -25.833982901000375,
+        "gamma": -28.301527246729115
+      }
+    },
+    {
+      "timestamp": 1748921072.920624,
+      "meditation_state": 0,
+      "confidence": 0.9688721895217896,
+      "percentage": 33.650983974399075,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.521406032916886,
+        "theta": -32.76369853184627,
+        "delta": -30.486625722738303,
+        "beta": -26.47602242475831,
+        "gamma": -29.0461332454402
+      }
+    },
+    {
+      "timestamp": 1748921072.920624,
+      "meditation_state": 0,
+      "confidence": 0.9778148531913757,
+      "percentage": 33.945050305833526,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.521406032916886,
+        "theta": -32.76369853184627,
+        "delta": -30.486625722738303,
+        "beta": -26.47602242475831,
+        "gamma": -29.0461332454402
+      }
+    },
+    {
+      "timestamp": 1748921077.276709,
+      "meditation_state": 0,
+      "confidence": 0.9684634804725647,
+      "percentage": 35.11341747106175,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.09209968480021,
+        "theta": -32.78542411104785,
+        "delta": -28.960243217883516,
+        "beta": -26.366024861800962,
+        "gamma": -28.931511499623458
+      }
+    },
+    {
+      "timestamp": 1748921077.276709,
+      "meditation_state": 0,
+      "confidence": 0.9774215221405029,
+      "percentage": 35.08834127047941,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.09209968480021,
+        "theta": -32.78542411104785,
+        "delta": -28.960243217883516,
+        "beta": -26.366024861800962,
+        "gamma": -28.931511499623458
+      }
+    },
+    {
+      "timestamp": 1748921081.319923,
+      "meditation_state": 0,
+      "confidence": 0.9782402515411377,
+      "percentage": 33.86281568742969,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.226909663616894,
+        "theta": -35.16008626139735,
+        "delta": -33.81174708646936,
+        "beta": -26.346373702845664,
+        "gamma": -27.960308146091933
+      }
+    },
+    {
+      "timestamp": 1748921081.319923,
+      "meditation_state": 0,
+      "confidence": 0.9782183766365051,
+      "percentage": 33.91270724309054,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -33.226909663616894,
+        "theta": -35.16008626139735,
+        "delta": -33.81174708646936,
+        "beta": -26.346373702845664,
+        "gamma": -27.960308146091933
+      }
+    },
+    {
+      "timestamp": 1748921085.447179,
+      "meditation_state": 0,
+      "confidence": 0.9782308340072632,
+      "percentage": 35.1054209255388,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -32.82901795959237,
+        "theta": -32.75201708555237,
+        "delta": -29.9715638813616,
+        "beta": -26.825929461777605,
+        "gamma": -30.03111752780051
+      }
+    },
+    {
+      "timestamp": 1748921085.447179,
+      "meditation_state": 0,
+      "confidence": 0.9781368374824524,
+      "percentage": 35.14965531012167,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -32.82901795959237,
+        "theta": -32.75201708555237,
+        "delta": -29.9715638813616,
+        "beta": -26.825929461777605,
+        "gamma": -30.03111752780051
+      }
+    },
+    {
+      "timestamp": 1748921089.544058,
+      "meditation_state": 0,
+      "confidence": 0.9778422117233276,
+      "percentage": 34.01308926236586,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -32.91503786171247,
+        "theta": -33.55675623965917,
+        "delta": -29.403824458611517,
+        "beta": -26.032760946368704,
+        "gamma": -27.731287168333665
+      }
+    },
+    {
+      "timestamp": 1748921089.544058,
+      "meditation_state": 0,
+      "confidence": 0.9782298803329468,
+      "percentage": 33.98091082132862,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -32.91503786171247,
+        "theta": -33.55675623965917,
+        "delta": -29.403824458611517,
+        "beta": -26.032760946368704,
+        "gamma": -27.731287168333665
+      }
+    },
+    {
+      "timestamp": 1748921093.667611,
+      "meditation_state": 0,
+      "confidence": 0.9782670736312866,
+      "percentage": 35.09544738968749,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -31.713583894675804,
+        "theta": -30.228216445493715,
+        "delta": -26.110133819257968,
+        "beta": -27.077896632431056,
+        "gamma": -29.719538156965505
+      }
+    },
+    {
+      "timestamp": 1748921093.667611,
+      "meditation_state": 0,
+      "confidence": 0.9782024025917053,
+      "percentage": 35.16755556252506,
+      "feature_count": 82,
+      "brainwaves": {
+        "alpha": -31.713583894675804,
+        "theta": -30.228216445493715,
+        "delta": -26.110133819257968,
+        "beta": -27.077896632431056,
+        "gamma": -29.719538156965505
+      }
+    }
+  ],
+  "statistics": {
+    "meditation_data_points": 22,
+    "brainwave_data_points": 60,
+    "window_duration": 120,
+    "quality_rate": 95.0,
+    "smoothing_window": 5
+  },
+  "system_info": {
+    "visualization_type": "smooth_scrolling_html",
+    "update_frequency": "1Hz",
+    "feature_pipeline": "eeg_imu_only_no_hr",
+    "smoothing_method": "cubic_interpolation",
+    "wave_motion": "natural_breathing",
+    "data_file_path": "/Users/yamachang/Downloads/Real-Time System_v4/data/DEID_Participants/DEID_P1/Session_1/meditation_realtime_data_DEID_P1_S1.json",
+    "active_participant": null,
+    "active_session": null
+  }
+}

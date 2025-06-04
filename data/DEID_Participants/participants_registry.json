@@ -1,0 +1,38 @@
+{
+  "DEID_P1": {
+    "participant_id": "DEID_P1",
+    "registration_date": "2025-05-31T03:03:47.091602",
+    "sessions": {},
+    "notes": ""
+  },
+  "DEID_P2": {
+    "participant_id": "DEID_P2",
+    "registration_date": "2025-06-01T04:30:41.599232",
+    "sessions": {},
+    "notes": ""
+  },
+  "DEID_P3": {
+    "participant_id": "DEID_P3",
+    "registration_date": "2025-06-02T22:40:25.819345",
+    "sessions": {},
+    "notes": ""
+  },
+  "DEID_P4": {
+    "participant_id": "DEID_P4",
+    "registration_date": "2025-06-03T01:10:39.779453",
+    "sessions": {},
+    "notes": ""
+  },
+  "DEID_P5": {
+    "participant_id": "DEID_P5",
+    "registration_date": "2025-06-03T01:17:34.442447",
+    "sessions": {},
+    "notes": ""
+  },
+  "DEID_P6": {
+    "participant_id": "DEID_P6",
+    "registration_date": "2025-06-03T18:16:03.908074",
+    "sessions": {},
+    "notes": ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "participant_id": "DEID_P1",
+  "registration_date": "2025-05-31T03:03:47.091602",
+  "report_generated": "2025-05-31T03:14:07.232272",
+  "total_sessions": 0,
+  "sessions_summary": {},
+  "study_metrics": {
+    "total_study_time_minutes": 0,
+    "total_study_time_hours": 0.0,
+    "induction_sessions": 0,
+    "sham_sessions": 0,
+    "average_session_duration": 0,
+    "study_completion_rate": 0.0,
+    "study_completed": false
+  },
+  "file_locations": {}
+}
